@@ -1,8 +1,3 @@
----
-title: "PyRayCasting — Overview do Projeto"
-subtitle: "Ray tracer em C++ para a cadeira de Computação Gráfica"
----
-
 # Overview do projeto PyRayCasting
 
 É um **ray tracer baseado em CPU**, que lê uma cena de um arquivo texto (`scenes/scene1.txt`), traça raios para cada pixel, calcula sombreamento pelo **modelo de Phong** (ambiente + difusa + especular) e mostra o resultado numa janela via **OpenGL legado (`glDrawPixels`) + GLFW**. Só existe um tipo de objeto geométrico: **esfera**.
