@@ -1,3 +1,7 @@
+# Equipe de CG
+- JOSÉ ALBERTO RODRIGUES NETO - 547872
+- PEDRO HENRIQUE DE OLIVEIRA GOMES - 557790
+- PEDRO VINICIUS COELHO BELEM - 538867
 # Overview do projeto PyRayCasting
 
 É um **ray tracer baseado em CPU**, que lê uma cena de um arquivo texto (`scenes/scene1.txt`), traça raios para cada pixel, calcula sombreamento pelo **modelo de Phong** (ambiente + difusa + especular) e mostra o resultado numa janela via **OpenGL legado (`glDrawPixels`) + GLFW**. Só existe um tipo de objeto geométrico: **esfera**.
