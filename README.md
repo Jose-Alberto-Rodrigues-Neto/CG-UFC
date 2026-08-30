@@ -94,9 +94,3 @@ onde `Ka, Kd, Ks, shininess` vêm do material da esfera, `Ia` vem de `ambient`, 
    # Executar visualização da Tarefa 1
    ./build/tarefa1
    ```
-
-**Atenção:** `src/*.cpp` vai incluir `Janela 2.cpp` junto com `Janela.cpp`, o que causa erro de linkagem. Apague ou mova `Janela 2.cpp` para fora de `src/` antes de rodar esse comando.
-
-```bash
-./raytracer
-```
