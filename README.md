@@ -67,12 +67,6 @@ Ispecular = Ks * Il * max(R·V, 0)^shininess
 
 onde `Ka, Kd, Ks, shininess` vêm do material da esfera, `Ia` vem de `ambient`, `Il` vem de cada `light`, `N` é a normal da esfera, `L` aponta para a fonte, `V` aponta para a câmera e `R` é o vetor refletido — exatamente o que o `Renderer::shade()` implementa.
 
-## Sobre os "STUDENT TODO"
-
-Existem 6 marcações `// STUDENT TODO N` no código (`Sphere::intersect`, `Camera::generateRay`, `Renderer::closestHit`, `Renderer::isInShadow`, `Renderer::shade`, `Renderer::render`) — são os pontos que a disciplina espera que o aluno implemente. Nesta cópia analisada, **todos os 6 já estão preenchidos**, então é provavelmente um gabarito/versão de referência, ou uma etapa já avançada do projeto. Vale conferir se é essa mesma a versão a ser entregue.
-
-Um detalhe importante: `Renderer::render()` **não usa** `Camera::generateRay()` — ele recalcula a posição do pixel na janela manualmente usando `Janela` e assume a câmera sempre olhando na direção -z a partir de `eye_`. Isso funciona para a cena de exemplo, mas ignora `lookAt_`/`up_`/`fov_` da câmera (o método `generateRay`, que usa a base `u_,v_,w_` e o FOV corretamente, fica sem uso). Se a disciplina pedir suporte a câmeras com outras orientações, esse é o ponto a revisar.
-
 ## Como rodar
 
 ### Opção A — usando CMake (recomendado, `CMakeLists.txt` incluso)
