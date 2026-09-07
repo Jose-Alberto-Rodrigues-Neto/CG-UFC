@@ -94,7 +94,13 @@ onde `Ka, Kd, Ks, shininess` vêm do material da esfera, `Ia` vem de `ambient`, 
    # Para testar outra cena:
    ./build/raytracer scenes/outra_cena.txt
    ```
+   #### Tarefa 1
    ```bash
    # Executar visualização da Tarefa 1
    ./build/tarefa1
+   ```
+   #### Tarefa 2
+   ```bash
+   # Executar visualização da Tarefa 1
+   ./build/tarefa2
    ```
