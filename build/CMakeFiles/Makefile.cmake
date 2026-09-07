@@ -50,4 +50,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/raytracer.dir/DependInfo.cmake"
   "CMakeFiles/tarefa1.dir/DependInfo.cmake"
+  "CMakeFiles/tarefa2.dir/DependInfo.cmake"
   )

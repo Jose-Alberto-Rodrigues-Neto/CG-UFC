@@ -143,6 +143,19 @@ tarefa1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/build
 .PHONY : tarefa1/fast
 
+#=============================================================================
+# Target rules for targets named tarefa2
+
+# Build rule for target.
+tarefa2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tarefa2
+.PHONY : tarefa2
+
+# fast build rule for target.
+tarefa2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/build
+.PHONY : tarefa2/fast
+
 src/Camera.o: src/Camera.cpp.o
 .PHONY : src/Camera.o
 
@@ -174,6 +187,7 @@ src/Color.o: src/Color.cpp.o
 src/Color.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Color.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Color.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Color.cpp.o
 .PHONY : src/Color.cpp.o
 
 src/Color.i: src/Color.cpp.i
@@ -183,6 +197,7 @@ src/Color.i: src/Color.cpp.i
 src/Color.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Color.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Color.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Color.cpp.i
 .PHONY : src/Color.cpp.i
 
 src/Color.s: src/Color.cpp.s
@@ -192,6 +207,7 @@ src/Color.s: src/Color.cpp.s
 src/Color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Color.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Color.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Color.cpp.s
 .PHONY : src/Color.cpp.s
 
 src/Display.o: src/Display.cpp.o
@@ -201,6 +217,7 @@ src/Display.o: src/Display.cpp.o
 src/Display.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Display.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Display.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Display.cpp.o
 .PHONY : src/Display.cpp.o
 
 src/Display.i: src/Display.cpp.i
@@ -210,6 +227,7 @@ src/Display.i: src/Display.cpp.i
 src/Display.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Display.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Display.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Display.cpp.i
 .PHONY : src/Display.cpp.i
 
 src/Display.s: src/Display.cpp.s
@@ -219,6 +237,7 @@ src/Display.s: src/Display.cpp.s
 src/Display.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Display.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Display.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Display.cpp.s
 .PHONY : src/Display.cpp.s
 
 src/Framebuffer.o: src/Framebuffer.cpp.o
@@ -228,6 +247,7 @@ src/Framebuffer.o: src/Framebuffer.cpp.o
 src/Framebuffer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Framebuffer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Framebuffer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Framebuffer.cpp.o
 .PHONY : src/Framebuffer.cpp.o
 
 src/Framebuffer.i: src/Framebuffer.cpp.i
@@ -237,6 +257,7 @@ src/Framebuffer.i: src/Framebuffer.cpp.i
 src/Framebuffer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Framebuffer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Framebuffer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Framebuffer.cpp.i
 .PHONY : src/Framebuffer.cpp.i
 
 src/Framebuffer.s: src/Framebuffer.cpp.s
@@ -246,6 +267,7 @@ src/Framebuffer.s: src/Framebuffer.cpp.s
 src/Framebuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Framebuffer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Framebuffer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Framebuffer.cpp.s
 .PHONY : src/Framebuffer.cpp.s
 
 src/Janela.o: src/Janela.cpp.o
@@ -255,6 +277,7 @@ src/Janela.o: src/Janela.cpp.o
 src/Janela.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Janela.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Janela.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Janela.cpp.o
 .PHONY : src/Janela.cpp.o
 
 src/Janela.i: src/Janela.cpp.i
@@ -264,6 +287,7 @@ src/Janela.i: src/Janela.cpp.i
 src/Janela.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Janela.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Janela.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Janela.cpp.i
 .PHONY : src/Janela.cpp.i
 
 src/Janela.s: src/Janela.cpp.s
@@ -273,6 +297,7 @@ src/Janela.s: src/Janela.cpp.s
 src/Janela.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Janela.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Janela.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Janela.cpp.s
 .PHONY : src/Janela.cpp.s
 
 src/Material.o: src/Material.cpp.o
@@ -282,6 +307,7 @@ src/Material.o: src/Material.cpp.o
 src/Material.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Material.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Material.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Material.cpp.o
 .PHONY : src/Material.cpp.o
 
 src/Material.i: src/Material.cpp.i
@@ -291,6 +317,7 @@ src/Material.i: src/Material.cpp.i
 src/Material.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Material.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Material.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Material.cpp.i
 .PHONY : src/Material.cpp.i
 
 src/Material.s: src/Material.cpp.s
@@ -300,6 +327,7 @@ src/Material.s: src/Material.cpp.s
 src/Material.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Material.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Material.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Material.cpp.s
 .PHONY : src/Material.cpp.s
 
 src/PointLight.o: src/PointLight.cpp.o
@@ -333,6 +361,7 @@ src/Ray.o: src/Ray.cpp.o
 src/Ray.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Ray.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Ray.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Ray.cpp.o
 .PHONY : src/Ray.cpp.o
 
 src/Ray.i: src/Ray.cpp.i
@@ -342,6 +371,7 @@ src/Ray.i: src/Ray.cpp.i
 src/Ray.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Ray.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Ray.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Ray.cpp.i
 .PHONY : src/Ray.cpp.i
 
 src/Ray.s: src/Ray.cpp.s
@@ -351,6 +381,7 @@ src/Ray.s: src/Ray.cpp.s
 src/Ray.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Ray.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Ray.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Ray.cpp.s
 .PHONY : src/Ray.cpp.s
 
 src/Renderer.o: src/Renderer.cpp.o
@@ -432,6 +463,7 @@ src/Sphere.o: src/Sphere.cpp.o
 src/Sphere.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Sphere.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Sphere.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Sphere.cpp.o
 .PHONY : src/Sphere.cpp.o
 
 src/Sphere.i: src/Sphere.cpp.i
@@ -441,6 +473,7 @@ src/Sphere.i: src/Sphere.cpp.i
 src/Sphere.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Sphere.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Sphere.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Sphere.cpp.i
 .PHONY : src/Sphere.cpp.i
 
 src/Sphere.s: src/Sphere.cpp.s
@@ -450,6 +483,7 @@ src/Sphere.s: src/Sphere.cpp.s
 src/Sphere.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Sphere.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Sphere.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Sphere.cpp.s
 .PHONY : src/Sphere.cpp.s
 
 src/Tarefa1.o: src/Tarefa1.cpp.o
@@ -476,6 +510,30 @@ src/Tarefa1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Tarefa1.cpp.s
 .PHONY : src/Tarefa1.cpp.s
 
+src/Tarefa2.o: src/Tarefa2.cpp.o
+.PHONY : src/Tarefa2.o
+
+# target to build an object file
+src/Tarefa2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Tarefa2.cpp.o
+.PHONY : src/Tarefa2.cpp.o
+
+src/Tarefa2.i: src/Tarefa2.cpp.i
+.PHONY : src/Tarefa2.i
+
+# target to preprocess a source file
+src/Tarefa2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Tarefa2.cpp.i
+.PHONY : src/Tarefa2.cpp.i
+
+src/Tarefa2.s: src/Tarefa2.cpp.s
+.PHONY : src/Tarefa2.s
+
+# target to generate assembly for a file
+src/Tarefa2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Tarefa2.cpp.s
+.PHONY : src/Tarefa2.cpp.s
+
 src/Vector3.o: src/Vector3.cpp.o
 .PHONY : src/Vector3.o
 
@@ -483,6 +541,7 @@ src/Vector3.o: src/Vector3.cpp.o
 src/Vector3.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Vector3.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Vector3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Vector3.cpp.o
 .PHONY : src/Vector3.cpp.o
 
 src/Vector3.i: src/Vector3.cpp.i
@@ -492,6 +551,7 @@ src/Vector3.i: src/Vector3.cpp.i
 src/Vector3.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Vector3.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Vector3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Vector3.cpp.i
 .PHONY : src/Vector3.cpp.i
 
 src/Vector3.s: src/Vector3.cpp.s
@@ -501,6 +561,7 @@ src/Vector3.s: src/Vector3.cpp.s
 src/Vector3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/Vector3.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/src/Vector3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/src/Vector3.cpp.s
 .PHONY : src/Vector3.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -537,6 +598,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... raytracer"
 	@echo "... tarefa1"
+	@echo "... tarefa2"
 	@echo "... src/Camera.o"
 	@echo "... src/Camera.i"
 	@echo "... src/Camera.s"
@@ -576,6 +638,9 @@ help:
 	@echo "... src/Tarefa1.o"
 	@echo "... src/Tarefa1.i"
 	@echo "... src/Tarefa1.s"
+	@echo "... src/Tarefa2.o"
+	@echo "... src/Tarefa2.i"
+	@echo "... src/Tarefa2.s"
 	@echo "... src/Vector3.o"
 	@echo "... src/Vector3.i"
 	@echo "... src/Vector3.s"

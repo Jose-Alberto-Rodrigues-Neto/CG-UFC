@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/alberto/Downloads/Archive/build
 # The main recursive "all" target.
 all: CMakeFiles/raytracer.dir/all
 all: CMakeFiles/tarefa1.dir/all
+all: CMakeFiles/tarefa2.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/raytracer.dir/clean
 clean: CMakeFiles/tarefa1.dir/clean
+clean: CMakeFiles/tarefa2.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,6 +129,32 @@ tarefa1: CMakeFiles/tarefa1.dir/rule
 CMakeFiles/tarefa1.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa1.dir/build.make CMakeFiles/tarefa1.dir/clean
 .PHONY : CMakeFiles/tarefa1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tarefa2.dir
+
+# All Build rule for target.
+CMakeFiles/tarefa2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alberto/Downloads/Archive/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35 "Built target tarefa2"
+.PHONY : CMakeFiles/tarefa2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tarefa2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alberto/Downloads/Archive/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tarefa2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alberto/Downloads/Archive/build/CMakeFiles 0
+.PHONY : CMakeFiles/tarefa2.dir/rule
+
+# Convenience name for target.
+tarefa2: CMakeFiles/tarefa2.dir/rule
+.PHONY : tarefa2
+
+# clean rule for target.
+CMakeFiles/tarefa2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tarefa2.dir/build.make CMakeFiles/tarefa2.dir/clean
+.PHONY : CMakeFiles/tarefa2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

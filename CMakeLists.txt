@@ -5,6 +5,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # ---------------------------------------------------------------------------
+# Dependencia: GLFW (+ OpenGL). Usada pelo Display::show, que o "raytracer",
+# o "tarefa1" e o "tarefa2" chamam para abrir uma janela com o resultado.
+# A busca NAO e REQUIRED: sem GLFW instalado, nenhum alvo e criado, mas o
+# "cmake -B build" nao falha (so avisa).
+#
 # Linux:   sudo apt install libglfw3-dev
 # macOS:   brew install glfw
 # Windows: vcpkg install glfw3   (ou MSYS2: pacman -S mingw-w64-x86_64-glfw)
@@ -21,9 +26,11 @@ if(glfw3_FOUND AND OpenGL_FOUND)
     # Renderer, Display). Le todos os .cpp de src/, exceto:
     #   - "Janela 2.cpp"  -> duplicado de Janela.cpp (simbolo repetido)
     #   - "Tarefa1.cpp"   -> tem seu proprio main(), nao entra aqui
+    #   - "Tarefa2.cpp"   -> idem
     file(GLOB RAYTRACER_SOURCES CONFIGURE_DEPENDS "${SRC_DIR}/*.cpp")
     list(FILTER RAYTRACER_SOURCES EXCLUDE REGEX ".*Janela 2\\.cpp$")
     list(FILTER RAYTRACER_SOURCES EXCLUDE REGEX ".*/Tarefa1\\.cpp$")
+    list(FILTER RAYTRACER_SOURCES EXCLUDE REGEX ".*/Tarefa2\\.cpp$")
 
     add_executable(raytracer ${RAYTRACER_SOURCES})
     target_include_directories(raytracer PRIVATE "${HEADER_DIR}")
@@ -34,7 +41,7 @@ if(glfw3_FOUND AND OpenGL_FOUND)
     # rodar a partir da raiz do projeto ou do diretorio de build.
 
     # Alvo "tarefa1": pinta uma esfera (hit/no-hit, sem Phong), salva em
-    # canvas.ppm E mostra numa janela via Display::show
+    # canvas.ppm E mostra numa janela via Display::show.
     add_executable(tarefa1
             "${SRC_DIR}/Tarefa1.cpp"
             "${SRC_DIR}/Vector3.cpp"
@@ -48,6 +55,22 @@ if(glfw3_FOUND AND OpenGL_FOUND)
     )
     target_include_directories(tarefa1 PRIVATE "${HEADER_DIR}")
     target_link_libraries(tarefa1 PRIVATE glfw OpenGL::GL)
+
+    # Alvo "tarefa2": esfera iluminada por uma fonte pontual (difusa +
+    # especular de Phong), salva em canvas.ppm E mostra numa janela.
+    add_executable(tarefa2
+            "${SRC_DIR}/Tarefa2.cpp"
+            "${SRC_DIR}/Vector3.cpp"
+            "${SRC_DIR}/Ray.cpp"
+            "${SRC_DIR}/Color.cpp"
+            "${SRC_DIR}/Material.cpp"
+            "${SRC_DIR}/Sphere.cpp"
+            "${SRC_DIR}/Janela.cpp"
+            "${SRC_DIR}/Framebuffer.cpp"
+            "${SRC_DIR}/Display.cpp"
+    )
+    target_include_directories(tarefa2 PRIVATE "${HEADER_DIR}")
+    target_link_libraries(tarefa2 PRIVATE glfw OpenGL::GL)
 
 else()
     message(WARNING "GLFW e/ou OpenGL nao encontrados -- nenhum alvo sera criado (instale libglfw3-dev / brew install glfw).")

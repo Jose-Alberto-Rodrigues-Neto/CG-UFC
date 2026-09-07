@@ -1,4 +1,5 @@
 /home/alberto/Downloads/Archive/build/CMakeFiles/raytracer.dir
 /home/alberto/Downloads/Archive/build/CMakeFiles/tarefa1.dir
+/home/alberto/Downloads/Archive/build/CMakeFiles/tarefa2.dir
 /home/alberto/Downloads/Archive/build/CMakeFiles/edit_cache.dir
 /home/alberto/Downloads/Archive/build/CMakeFiles/rebuild_cache.dir
