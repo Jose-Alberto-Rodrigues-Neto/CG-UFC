@@ -101,6 +101,11 @@ onde `Ka, Kd, Ks, shininess` vêm do material da esfera, `Ia` vem de `ambient`, 
    ```
    #### Tarefa 2
    ```bash
-   # Executar visualização da Tarefa 1
+   # Executar visualização da Tarefa 2
    ./build/tarefa2
+   ```
+   #### Tarefa 3
+   ```bash
+   # Executar visualização da Tarefa 3
+   ./build/tarefa3
    ```
